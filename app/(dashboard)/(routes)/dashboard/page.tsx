@@ -1,9 +1,14 @@
-const DashboardPage = () =>  {
+const DashboardPage = ({
+    children
+}: {
+    children: React.ReactNode;
+}) =>  {
   return (    
     <div>
-        <p>
-            This is the Dashboard Page
-        </p>
+       This is the DashboardPage (Protected)
+        <main>
+            {children}
+        </main>
     </div>
     );
 }
